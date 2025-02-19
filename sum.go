@@ -17,5 +17,5 @@ func main() {
 	sum1 := num3 + num4
 
 	fmt.Printf("The sum of %d and %d is: %d\n", num1, num2, sum)
-	fmt.Printf("sum of  num3:%d ,num4 :%d is %d\n", num3, num4, sum1)
+	fmt.Printf("sum of  num3:%d ,num4:%d is %d\n", num3, num4, sum1)
 }
