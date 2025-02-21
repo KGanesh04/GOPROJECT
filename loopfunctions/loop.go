@@ -7,7 +7,7 @@ import (
 // Function to demonstrate if, if-else, while (for loop), switch
 func main() {
 
-	// ✅ if, if-else Example
+	// if, if-else Example
 	number := 10
 	if number%2 == 0 {
 		fmt.Println("Number is Even")
