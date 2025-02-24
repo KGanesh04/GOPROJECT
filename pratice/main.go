@@ -5,12 +5,23 @@ import (
 	"pratice/calc"
 )
 
+func add(a, b int) int {
+	return a + b
+}
+
 type employee struct {
 	id    int
 	Name  string
 	batch string
 }
 
+func (e employee) getid() {
+	fmt.Println("id:", e.id)
+}
+
+func (e *employee) updateid() int {
+	return e.id + 1
+}
 func main() {
 
 	var num1, num2 int
@@ -65,5 +76,30 @@ func main() {
 	var arr [5]int = [5]int{1, 2, 3, 4, 5}
 
 	fmt.Print("array list:", arr)
+
+	var a, b int
+	fmt.Print("enter a & b values")
+	fmt.Scan(&a, &b)
+
+	fmt.Println("a+b", add(a, b))
+
+	employee.getid(E1)
+	fmt.Println("id", E1.updateid())
+
+	Countryname := map[int]string{
+		1: "India",
+		2: "USA",
+		3: "UK"}
+
+	fmt.Println("Countryname:", Countryname)
+
+	country := Countryname[1]
+	fmt.Println("country:", country)
+
+	fmt.Println("enter Country:")
+	fmt.Scan(&country)
+	fmt.Println("Contries before:", Countryname)
+	Countryname[2] = country
+	fmt.Println("Countries after:", Countryname)
 
 }
